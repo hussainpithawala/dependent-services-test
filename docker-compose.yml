@@ -1,0 +1,26 @@
+version: '3'  # version of compose format
+
+services:
+  accounts:
+    build: ./accounts
+    volumes:
+      - ./accounts:/usr/src/app # mount point
+    ports:
+      - 5001:80  # host:container
+
+  cards:
+    build: ./cards
+    volumes:
+      - ./cards:/usr/src/app # mount point
+    ports:
+      - 5002:80  # host:container
+
+  users:
+    build: ./users
+    volumes:
+      - ./users:/usr/src/app # mount point
+    ports:
+      - 5003:80 # host:container
+    depends_on:
+      - accounts
+      - cards
