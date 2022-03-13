@@ -11,13 +11,11 @@ api = Api(app)
 
 class Cards(Resource):
     def get(self):
-        return {
-            'Cards': [
+        return [
                 {"id": "card_1", "card-holder-name": "Card-holder-fname-1", "user_id": "user_1"},
                 {"id": "card_2", "card-holder-name": "Card-holder-fname-2", "user_id": "user_2"},
                 {"id": "card_3", "card-holder-name": "Card-holder-fname-3", "user_id": "user_3"}
             ]
-        }
 
 
 # Create routes
