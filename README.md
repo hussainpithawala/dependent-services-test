@@ -284,7 +284,5 @@ Traceback (most recent call last):
 AttributeError: 'list' object has no attribute 'get'
 ```
 ### Expectation
-Dependent test suites should kick off to make sure that any changes in the dependency
-API endpoints should kick off the dependency test-suites so that no breaking change goes unnoticeable.
-
+Dependent test suites should kick off to make sure that any changes in the dependency API endpoints don't go unnoticeable.
 > @author: Hussain Pithawala for Incred Financial Services
