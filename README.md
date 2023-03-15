@@ -281,4 +281,4 @@ AttributeError: 'list' object has no attribute 'get'
 ```
 ### Expectation
 Dependent test suites should kick off to make sure that any changes in the dependency API endpoints don't go unnoticeable.
-> @author: Hussain Pithawala for Incred Financial Services
+> @author: Hussain Pithawala
