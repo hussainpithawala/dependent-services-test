@@ -16,10 +16,6 @@ Checkout to branch dev-1 using following command
 git checkout dev-1
 ```
 
-```shell
-git checkout dev-1
-```
-
 Do a docker-compose up to build the images and run the services
 ```shell
 docker compose up
